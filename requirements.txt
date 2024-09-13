@@ -1,0 +1,15 @@
+pandas
+scikit-learn
+numpy
+seaborn
+ipykernel
+Flask
+#this is more stable version
+mlflow==2.2.2
+dvc
+apache-airflow
+
+
+# This file specifies the dependencies required for the project.
+# The "-e ." entry indicates that the current directory is included as a package.
+-e .
