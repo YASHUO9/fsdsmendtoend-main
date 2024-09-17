@@ -44,3 +44,24 @@ class TrainingPipeline:
             self.start_model_training(train_arr,test_arr)
         except Exception as e:
             raise customexception(e,sys)
+        
+        
+        
+        
+obj =DataIngestion()
+train_data_path,test_data_path=obj.initiate_data_ingestion()
+obj = DataTransformation()
+train_arr,test_arr=obj.initialize_data_transformation(train_data_path,test_data_path)
+obj = ModelTrainer()
+obj.initate_model_training(train_arr,test_arr)
+obj = ModelEvaluation()
+obj.initiate_model_evaluation(train_arr,test_arr)       
+        
+        
+        
+        
+        
+        
+        
+        
+        
